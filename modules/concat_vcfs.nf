@@ -4,7 +4,7 @@ nextflow.enable.dsl=2
 
 process CONCAT_VCFS{ 
     container = 'quay.io/eqtlcatalogue/susie-finemapping:v20.08.1'
-    publishDir "${params.outdir}/concated_vcf", mode: 'copy'
+    publishDir "${params.outdir}/concatenated_vcf", mode: 'copy'
 
 
 
