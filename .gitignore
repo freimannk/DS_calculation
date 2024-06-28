@@ -1,0 +1,7 @@
+.nextflow*
+work/
+debug/
+singularity*/
+*.html*
+DS_CALC_trace.txt*
+slurm*
