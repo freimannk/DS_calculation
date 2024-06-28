@@ -21,6 +21,8 @@ work            # Directory containing the nextflow working files
 
 ###  Info needed in nextflow.config file
 
+All VCF files must have the same sample columns appearing in the same order (workflow uses `bcftools concat`).
+
 * autosomal_PAR_vcf : path to the VCF file containing autosomal chromosomes and the chrX PAR region with GT field
 * non_PAR_vcf : path to the VCF file containing the chrX non-PAR region without structural variants with GT field
 * metadata : path to the metadata file containing columns `genotype_id` and `sex`. The sex column must exclusively contain values `female` and `male`.
